@@ -302,7 +302,7 @@ Sakura Automation Platform 是一站式持续自动化平台，涵盖 APP自动�
 ## License
 
 - 遵循 <a href="https://github.com/Charles7c/continew-admin/blob/dev/LICENSE" target="_blank">Apache-2.0</a> 开源许可协议
-- Copyright © 2024-present <a href="https://blog.charles7c.top" target="_blank">Sakura</a>
+- Copyright © 2024-present <a href="https://blog.sakura.hk.cn" target="_blank">Sakura</a>
 
 ## GitHub Star 趋势
 

@@ -1,36 +1,5 @@
 # 项目结构
 
-## 后端结构
-
-```bash
-Sakura.Automation.Platform.Api
-├── sakura-admin                          # 系统启动入口
-├── sakura-common                         # 工具类
-│       └── annotation                    # 自定义注解
-│       └── config                        # 全局配置
-│       └── constant                      # 通用常量
-│       └── core                          # 核心控制
-│       └── enums                         # 通用枚举
-│       └── exception                     # 通用异常
-│       └── filter                        # 过滤器处理
-│       └── utils                         # 通用类处理
-├── sakura-controller                      # 前台控制器
-├── sakura-framework                      # 框架核心
-│       └── aspectj                       # 注解实现
-│       └── config                        # 系统配置
-│       └── datasource                    # 数据权限
-│       └── interceptor                   # 拦截器
-│       └── manager                       # 异步处理
-│       └── security                      # 权限控制
-│       └── web                           # 前端控制
-├── sakura-generator                      # 代码生成工具
-├── sakura-quartz                         # 定时任务
-├── sakura-system                         # 系统管理
-├── sakura-xxxxxx                         # 其他模块
-├── pom.xml                               # Maven 项目核心配置文件
-└── README.md                             # 项目说明文档
-```
-
 ## 前端结构
 
 ```bash
@@ -64,5 +33,36 @@ Sakura.Automation.Platform.Web
 ├── vue.config.js                         # Vue-cli 配置
 ├── postcss.config.js                     # PostCSS 配置
 ├── package.json                          # npm包配置文件，里面定义了项目的npm脚本，依赖包等信息
+└── README.md                             # 项目说明文档
+```
+
+## 后端结构
+
+```bash
+Sakura.Automation.Platform.Api
+├── sakura-admin                          # 系统启动入口
+├── sakura-common                         # 工具类
+│       └── annotation                    # 自定义注解
+│       └── config                        # 全局配置
+│       └── constant                      # 通用常量
+│       └── core                          # 核心控制
+│       └── enums                         # 通用枚举
+│       └── exception                     # 通用异常
+│       └── filter                        # 过滤器处理
+│       └── utils                         # 通用类处理
+├── sakura-controller                      # 前台控制器
+├── sakura-framework                      # 框架核心
+│       └── aspectj                       # 注解实现
+│       └── config                        # 系统配置
+│       └── datasource                    # 数据权限
+│       └── interceptor                   # 拦截器
+│       └── manager                       # 异步处理
+│       └── security                      # 权限控制
+│       └── web                           # 前端控制
+├── sakura-generator                      # 代码生成工具
+├── sakura-quartz                         # 定时任务
+├── sakura-system                         # 系统管理
+├── sakura-xxxxxx                         # 其他模块
+├── pom.xml                               # Maven 项目核心配置文件
 └── README.md                             # 项目说明文档
 ```

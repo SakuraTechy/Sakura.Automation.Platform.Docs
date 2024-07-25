@@ -6,13 +6,16 @@
     Sakura Automation Platform
   </p>
   <div style="display: flex;justify-content: center;gap: 5px;">
-    <a href="https://github.com/Charles7c/continew-admin/blob/dev/LICENSE" target="_blank">
+    <!-- <a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/blob/dev/LICENSE" target="_blank">
       <img src="https://img.shields.io/badge/License-Apache--2.0-blue.svg" alt="License" />
+    </a> -->
+    <a href="https://sakura.hk.cn/" target="_blank" style="display: inline-block;">
+      <img alt="官方网站" src="https://img.shields.io/badge/官网-sakura.hk.cn-F54860">
     </a>
-    <a href="https://github.com/Charles7c/continew-admin" target="_blank">
-      <img src="https://img.shields.io/badge/Release-v3.0.0-%23ff3f59.svg" alt="Release" />
+    <a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api" target="_blank">
+      <img src="https://img.shields.io/badge/版本-v1.0.0-%23ff3f59.svg" alt="Release" />
     </a>
-  <!-- <a href="https://app.codacy.com/gh/Charles7c/continew-admin/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade" target="_blank">
+  <!-- <a href="https://app.codacy.com/gh/SakuraTechy/Sakura.Automation.Platform.Api/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade" target="_blank">
     <img src="https://app.codacy.com/project/badge/Grade/19e3e2395d554efe902c3822e65db30e" alt="Codacy Badge" />
   </a>
   <a href="https://sonarcloud.io/summary/new_code?id=Charles7c_continew-admin" target="_blank">
@@ -27,11 +30,11 @@
   <a href="https://github.com/Charles7c/continew-starter" target="_blank">
     <img src="https://img.shields.io/badge/Open JDK-17-%236CB52D.svg?logo=OpenJDK&logoColor=FFF" alt="Open JDK" /> 
   </a>-->
-  <a href="https://github.com/Charles7c/continew-admin" target="_blank">
-    <img src="https://img.shields.io/github/stars/Charles7c/continew-admin?style=social" alt="GitHub stars" />
+  <a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api" target="_blank">
+    <img src="https://img.shields.io/github/stars/SakuraTechy/Sakura.Automation.Platform.Api?style=social" alt="GitHub stars" />
   </a>
-  <a href="https://github.com/Charles7c/continew-admin" target="_blank">
-    <img src="https://img.shields.io/github/forks/Charles7c/continew-admin?style=social" alt="GitHub forks" />
+  <a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api" target="_blank">
+    <img src="https://img.shields.io/github/forks/SakuraTechy/Sakura.Automation.Platform.Api?style=social" alt="GitHub forks" />
   </a>
   <!-- <a href="https://gitee.com/continew/continew-admin" target="_blank">
     <img src="https://gitee.com/continew/continew-admin/badge/star.svg?theme=white" alt="Gitee stars" />
@@ -131,7 +134,7 @@ Sakura Automation Platform 是一站式持续自动化平台，涵盖 APP自动�
 
 ## 在线体验
 
-- 地址：[www.sakura.hk.cn](https://www.sakura.hk.cn:64082)
+- 地址：[www.sakura.hk.cn:64082](https://www.sakura.hk.cn:64082)
 - 账号：管理员
 - 密码：111111
 
@@ -258,6 +261,26 @@ Sakura Automation Platform 是一站式持续自动化平台，涵盖 APP自动�
 
 我们欢迎广大开发者贡献大家的智慧，让我们共同让它变得更完美，您可以在 GitHub 上提交 Pull Request，我们会尽快审核并公布;更多信息请参考 [贡献指南](contributing.md);
 
+:::tip
+
+- 如果您想提交新功能或优化现有代码，可以按照以下步骤操作：
+  1. 首先，在 Gitee 或 Github 上将项目 fork 到您自己的仓库
+  2. 然后，将 fork 过来的项目（即您的项目）克隆到本地
+  3. 切换到当前仍在维护的分支（请务必充分了解分支使用说明，可进群联系维护者确认）
+  4. 开始修改代码，修改完成后，将代码 commit 并 push 到您的远程仓库
+  5. 在 Gitee 或 Github 上新建 pull request（pr），选择好源和目标，按模板要求填写说明信息后提交即可（多多参考 [已批准合并的 pr 记录](https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/pulls?q=is%3Apr+is%3Amerged)，会大大增加批准合并率）
+  6. 最后，耐心等待维护者合并您的请求即可
+
+请记住，如果您有任何疑问或需要帮助，我们将随时提供支持。
+:::
+
+> [!IMPORTANT]
+> 欢迎大家贡献代码，我们非常感谢您的支持！为了更好地管理项目，维护者有一些要求：
+>
+> 1. 请确保代码、配置文件的结构和命名规范良好，完善的代码注释甚至包括接口文档参数示例，并遵循阿里巴巴的 <a href="https://github.com/continew-org/continew-admin/blob/dev/.style/Java%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C(%E9%BB%84%E5%B1%B1%E7%89%88).pdf" target="_blank">《Java开发手册(黄山版)》</a> 中的代码规范，保证代码质量和可维护性
+> 2. 在提交代码前，请按照 [Angular 提交规范](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular) 编写 commit 的 message（建议在 IntelliJ IDEA 中下载并安装 Git Commit Template 插件，以便按照规范进行 commit）
+> 3. 提交代码之前，请关闭所有代码窗口，执行 `mvn compile` 命令（代码格式化插件会在项目编译时对全局代码进行格式修正），编译通过后，不要再打开查看任何代码窗口，直接提交即可，以免不同的 IDE 配置会自动进行代码格式化
+
 ## 官方交流群
 
 欢迎各位小伙伴儿扫描下方二维码，备注 `sakura`，可探讨技术、提提需求~
@@ -290,7 +313,7 @@ Sakura Automation Platform 是一站式持续自动化平台，涵盖 APP自动�
 
 <!-- ## 特别鸣谢
 
-<a href="https://github.com/Charles7c/continew-admin/graphs/contributors">
+<a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/graphs/contributors">
   <img src="https://opencollective.com/continew-admin/contributors.svg?width=890&button=false" alt="contributors" />
 </a>
 
@@ -299,11 +322,24 @@ Sakura Automation Platform 是一站式持续自动化平台，涵盖 APP自动�
 - 感谢 <a href="https://github.com/baomidou/mybatis-plus" target="_blank">MyBatis Plus</a>、<a href="https://github.com/dromara/sa-token" target="_blank">Sa-Token</a> 、<a href="https://github.com/alibaba/jetcache" target="_blank">JetCache</a>、<a href="https://github.com/opengoofy/crane4j" target="_blank">Crane4j</a>、<a href="https://github.com/xiaoymin/knife4j" target="_blank">Knife4j</a>、<a href="https://github.com/dromara/hutool" target="_blank">Hutool</a> 等开源组件作者为国内开源世界作出的贡献
 - 感谢项目使用或未使用到的每一款开源组件，致敬各位开源先驱 :fire: 🔥 -->
 
+## 特别鸣谢
+
+感谢参与贡献的每一位小伙伴🥰
+
+<a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/graphs/contributors">
+  <img src="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/contributors.svg?width=890&button=false" alt="contributors" />
+</a>
+
+<!-- - 感谢 <a href="https://github.com/baomidou/mybatis-plus" target="_blank">MyBatis Plus</a>、<a href="https://github.com/dromara/sa-token" target="_blank">Sa-Token</a> 、<a href="https://github.com/alibaba/jetcache" target="_blank">JetCache</a>、<a href="https://github.com/opengoofy/crane4j" target="_blank">Crane4j</a>、<a href="https://github.com/xiaoymin/knife4j" target="_blank">Knife4j</a>、<a href="https://github.com/dromara/hutool" target="_blank">Hutool</a> 等开源组件作者为国内开源世界作出的贡献
+- 感谢 [JetBrains](https://www.jetbrains.com/) 提供的 [非商业开源软件开发授权](https://www.jetbrains.com/community/opensource/?utm_campaign=opensource&utm_content=approved&utm_medium=email&utm_source=newsletter&utm_term=jblogo#support)
+- 感谢 [Gi Demo](https://gitee.com/lin0716/gi-demo)、[Arco Design Pro](https://pro.arco.design/) 开箱即用的 Vue 中后台管理系统前端模板
+- 感谢项目使用或未使用到的每一款开源组件，致敬各位开源先驱 🔥 -->
+
 ## License
 
-- 遵循 <a href="https://github.com/Charles7c/continew-admin/blob/dev/LICENSE" target="_blank">Apache-2.0</a> 开源许可协议
-- Copyright © 2024-present <a href="https://blog.charles7c.top" target="_blank">Sakura</a>
+- 遵循 <a href="https://github.com/SakuraTechy/Sakura.Automation.Platform.Api/blob/dev/LICENSE" target="_blank">Apache-2.0</a> 开源许可协议
+- Copyright © 2024-present <a href="https://sakura.hk.cn" target="_blank">Sakura</a>
 
 ## GitHub Star 趋势
 
-![GitHub Star 趋势](https://starchart.cc/charles7c/continew-admin.svg)
+![GitHub Star 趋势](https://starchart.cc/SakuraTechy/Sakura.Automation.Platform.Api.svg)

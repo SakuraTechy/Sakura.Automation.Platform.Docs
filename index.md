@@ -44,11 +44,11 @@ import HomeSponsors from '/.vitepress/theme/components/HomeSponsors.vue'
 <!-- <HomeSponsors /> -->
 
 <style>
-.VPImage.logo{
-  width: 40px;
-  height: 40px;
-  margin-right: 0px;
-}
+/* .VPImage.logo{
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: 0px !important;
+} */
 .VPContent.is-home{
   padding-top: 40px;
   /* background: url("/bg.svg") center center / cover no-repeat; */

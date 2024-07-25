@@ -38,7 +38,7 @@
         distractionFreeMode: false,
         // 默认: https://cors-anywhere.azm.workers.dev/ https://github.com/login/oauth/access_token
         // proxy: 'https://mellifluous-bombolone-049a57.netlify.app/github_access_token',
-        proxy: 'https://vercel.charles7c.top/github_access_token',
+        proxy: 'https://vercel.sakura.hk.cn/github_access_token',
       });
     }
   

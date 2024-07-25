@@ -140,88 +140,43 @@ ZONE=public
 service network restart
 ```
 
-## 站点配置
+## 网站配置
 
 :::tip
 
 默认已经安装好1Panel面板并创建好前端访问站点，可直接使用，详情请进入1Panel网站面板查看
 
-- 地址：https://172.19.5.227:32487/3eb582a0 （地址中的IP请改为你的服务器IP）
+- 地址：http://172.19.5.227:28134/c0464ecc59 （地址中的IP请改为你的服务器IP）
 - 账号：root
 - 密码：3edc$RFV
-- 路径：打开左侧网站菜单，选择PHP项目，修改Sakura.Automation.Platform.web.test配置文件
+- 路径：打开左侧网站菜单，选择172.19.5.227:8083，修改配置文件
 
 ```bash
 # 参考以下配置
-server
-{
-    listen 8083;
-    server_name sakura.automation.platform.web.test;
-    index index.php index.html index.htm default.php default.htm default.html;
-    root /data/sakura/Sakura.Automation.Platform/web/origin/test/dist;
-    try_files $uri $uri/ /index.html;
-    
-    #CERT-APPLY-CHECK--START
-    # 用于SSL证书申请时的文件验证相关配置 -- 请勿删除
-    include /www/server/panel/vhost/nginx/well-known/sakura.automation.platform.web.test.conf;
-    #CERT-APPLY-CHECK--END
-
-    #SSL-START SSL相关配置，请勿删除或修改下一行带注释的404规则
-    #error_page 404/404.html;
-    #SSL-END
-
-    #ERROR-PAGE-START  错误页配置，可以注释、删除或修改
-    #error_page 404 /404.html;
-    #error_page 502 /502.html;
-    #ERROR-PAGE-END
-
-    #PHP-INFO-START  PHP引用配置，可以注释或修改
-    include enable-php-80.conf;
-    #PHP-INFO-END
-
-    #REWRITE-START URL重写规则引用,修改后将导致面板设置的伪静态规则失效
-    include /www/server/panel/vhost/rewrite/sakura.automation.platform.web.test.conf;
-    #REWRITE-END
-
-    #禁止访问的文件或目录
-    location ~ ^/(\.user.ini|\.htaccess|\.git|\.env|\.svn|\.project|LICENSE|README.md)
-    {
-        return 404;
+server {
+    listen 8083 ; 
+    server_name 172.19.5.227; 
+    index index.php index.html index.htm default.php default.htm default.html; 
+    try_files $uri $uri/ /index.html; 
+    proxy_set_header Host $host; 
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; 
+    proxy_set_header X-Forwarded-Host $server_name; 
+    proxy_set_header X-Real-IP $remote_addr; 
+    proxy_http_version 1.1; 
+    proxy_set_header Upgrade $http_upgrade; 
+    proxy_set_header Connection "upgrade"; 
+    access_log /www/sites/sakura.automation.platform.web.prod/log/access.log; 
+    error_log /www/sites/sakura.automation.platform.web.prod/log/error.log; 
+    location ^~ /.well-known/acme-challenge {
+        allow all; 
+        root /usr/share/nginx/html; 
     }
-
-    #一键申请SSL证书验证目录相关设置
-    location ~ \.well-known{
-        allow all;
+    location /api {
+        rewrite ^/api/(.*)$ /$1 break; 
+        proxy_pass http://172.19.5.227:8084; 
+        index index.html; 
     }
-
-    #禁止在证书验证目录放入敏感文件
-    if ( $uri ~ "^/\.well-known/.*\.(php|jsp|py|js|css|lua|ts|go|zip|tar\.gz|rar|7z|sql|bak)$" ) {
-        return 403;
-    }
-
-    #过滤相关图片文件
-    # location ~ .*\.(gif|jpg|jpeg|png|bmp|swf)$
-    # {
-    #     expires      30d;
-    #     error_log /dev/null;
-    #     access_log /dev/null;
-    # }
-
-    location ~ .*\.(js|css)?$
-    {
-        expires      12h;
-        error_log /dev/null;
-        access_log /dev/null;
-    }
-    
-    location /api{
-        rewrite  ^/api/(.*)$ /$1 break;
-        proxy_pass   http://localhost:8084;
-        index index.html;
-    }
-    
-    access_log  /www/wwwlogs/sakura.automation.platform.web.test.log;
-    error_log  /www/wwwlogs/sakura.automation.platform.web.test.error.log;
+    root /www/sites/sakura.automation.platform.web.test/index/dist; 
 }
 ```
 
